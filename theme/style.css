@@ -121,7 +121,8 @@ body {
 	background: #f5efe0;
 	box-sizing: border-box;
 	color: #000;
-	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+	/* font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; */
+	font-family: 'Source Sans Pro';
 	font-size: 1.8rem;
 	letter-spacing: -0.015em;
 	text-align: left;
@@ -130,7 +131,8 @@ body {
 @supports ( font-variation-settings: normal ) {
 
 	body {
-		font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+		/* font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; */
+		font-family: 'Source Sans Pro';
 	}
 }
 
@@ -266,6 +268,33 @@ Inter variable font. Usage:
 	font-display: swap;
 	src: url(./assets/fonts/inter/Inter-italic-var.woff2) format("woff2");
 }
+
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./assets/fonts/SourceSans/SourceSansPro-Light.woff2') format('woff2'),
+        url('./assets/fonts/SourceSans/SourceSansPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./assets/fonts/SourceSans/SourceSansPro-Regular.woff2') format('woff2'),
+        url('./assets/fonts/SourceSans/SourceSansPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./assets/fonts/SourceSans/SourceSansPro-Bold.woff2') format('woff2'),
+        url('./assets/fonts/SourceSans/SourceSansPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
 
 
 /* Accessibility Settings -------------------- */
@@ -692,7 +721,8 @@ button,
 .faux-button,
 .wp-block-button__link,
 .wp-block-file__button {
-	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+	/* font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; */
+	font-family: 'Source Sans Pro';
 	line-height: 1;
 	outline: none;
 }
@@ -707,7 +737,8 @@ button,
 	.faux-button.more-link,
 	.wp-block-button__link,
 	.wp-block-file__button {
-		font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+		/* font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; */
+		font-family: 'Source Sans Pro';
 	}
 }
 
@@ -2759,7 +2790,8 @@ h2.entry-title {
 
 .has-drop-cap:not(:focus)::first-letter {
 	color: #cd2653;
-	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+	font-family: 'Source Sans Pro';
+	/* font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; */
 	font-size: 5.1em;
 	font-weight: 800;
 	margin: 0.05em 0.1em 0 0;
@@ -2787,7 +2819,8 @@ h2.entry-title {
 .entry-content .wp-block-pullquote,
 .entry-content .wp-block-quote.is-large,
 .entry-content .wp-block-quote.is-style-large {
-	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+	/* font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; */
+	font-family: 'Source Sans Pro';
 }
 
 @supports ( font-variation-settings: normal ) {
@@ -2799,7 +2832,8 @@ h2.entry-title {
 	.entry-content .wp-block-latest-comments,
 	.entry-content .wp-block-cover-image p,
 	.entry-content .wp-block-pullquote {
-		font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+		/* font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; */
+		font-family: 'Source Sans Pro';
 	}
 }
 
@@ -3486,14 +3520,16 @@ figure.wp-block-table.is-style-stripes {
 .entry-content ul,
 .entry-content dl,
 .entry-content dt {
-	font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+	/* font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif; */
+	font-family: 'Source Sans Pro';
 	letter-spacing: normal;
 }
 
 .entry-content cite,
 .entry-content figcaption,
 .entry-content .wp-caption-text {
-	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+	/* font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; */
+	font-family: 'Source Sans Pro';
 }
 
 @supports ( font-variation-settings: normal ) {
@@ -3501,7 +3537,8 @@ figure.wp-block-table.is-style-stripes {
 	.entry-content cite,
 	.entry-content figcaption,
 	.entry-content .wp-caption-text {
-		font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+		/* font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; */
+		font-family: 'Source Sans Pro';
 	}
 }
 
@@ -4075,14 +4112,16 @@ div.comment:first-of-type {
 .widget_text dl,
 .widget_text dt,
 .widget-content .rssSummary {
-	font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+	/* font-family: NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif; */
+	font-family: 'Source Sans Pro';
 	letter-spacing: normal;
 }
 
 .widget-content cite,
 .widget-content figcaption,
 .widget-content .wp-caption-text {
-	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+	/* font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; */
+	font-family: 'Source Sans Pro';
 }
 
 @supports ( font-variation-settings: normal ) {
@@ -4090,7 +4129,8 @@ div.comment:first-of-type {
 	.widget-content cite,
 	.widget-content figcaption,
 	.widget-content .wp-caption-text {
-		font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+		/* font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif; */
+		font-family: 'Source Sans Pro';
 	}
 }
 
