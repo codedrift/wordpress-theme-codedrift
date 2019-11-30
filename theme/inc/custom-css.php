@@ -1,6 +1,6 @@
 <?php
 /**
- * Twenty Twenty Custom CSS
+ * Codedrift Custom CSS
  *
  * @package WordPress
  * @subpackage Twenty_Twenty

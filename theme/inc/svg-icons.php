@@ -1,6 +1,6 @@
 <?php
 /**
- * Twenty Twenty SVG Icon helper functions
+ * Codedrift SVG Icon helper functions
  *
  * @package WordPress
  * @subpackage Twenty_Twenty

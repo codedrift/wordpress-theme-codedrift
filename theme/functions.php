@@ -1,6 +1,6 @@
 <?php
 /**
- * Twenty Twenty functions and definitions
+ * Codedrift functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
@@ -111,7 +111,7 @@ function twentytwenty_theme_support() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on Twenty Twenty, use a find and replace
+	 * If you're building a theme based on Codedrift, use a find and replace
 	 * to change 'twentytwenty' to the name of your theme in all the template files.
 	 */
 	load_theme_textdomain( 'twentytwenty' );
@@ -747,7 +747,7 @@ function twentytwenty_get_elements_array() {
 	);
 
 	/**
-	* Filters Twenty Twenty theme elements
+	* Filters Codedrift theme elements
 	*
 	* @since 1.0.0
 	*

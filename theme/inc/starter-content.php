@@ -1,6 +1,6 @@
 <?php
 /**
- * Twenty Twenty Starter Content
+ * Codedrift Starter Content
  *
  * @link https://make.wordpress.org/core/2016/11/30/starter-content-for-themes-in-4-7/
  *
@@ -14,7 +14,7 @@
  *
  * Passes it through the `twentytwenty_starter_content` filter before returning.
  *
- * @since  Twenty Twenty 1.0.0
+ * @since  Codedrift 1.0.0
  * @return array a filtered array of args for the starter_content.
  */
 function twentytwenty_get_starter_content() {
@@ -206,9 +206,9 @@ function twentytwenty_get_starter_content() {
 	);
 
 	/**
-	 * Filters Twenty Twenty array of starter content.
+	 * Filters Codedrift array of starter content.
 	 *
-	 * @since Twenty Twenty 1.0.0
+	 * @since Codedrift 1.0.0
 	 *
 	 * @param array $starter_content Array of starter content.
 	 */
