@@ -1,0 +1,44 @@
+version: '3.1'
+
+services:
+
+  wordpress:
+    image: wordpress:latest
+    restart: always
+    ports:
+      - 80:80
+    links:
+      - db:db
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: username
+      WORDPRESS_DB_PASSWORD: password
+      WORDPRESS_DB_NAME: wordpressdb
+      WORDPRESS_TABLE_PREFIX: wp_
+    volumes:
+      - ./theme:/var/www/html/wp-content/themes/codedrift-theme
+      # - ./plugins:/var/www/html/wp-content/plugins
+      # - ./uploads:/var/www/html/wp-content/uploads
+      # # Dies wird nur benötigt wenn man zum Beispiel die URL in der Datenbank suchen und ersetzen möchte.
+      # - ./searchandreplace:/var/www/html/searchandreplace
+
+  phpmyadmin:
+      image: phpmyadmin/phpmyadmin
+      ports:
+        - 8080:80
+      links:
+        - db:db
+
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: wordpressdb
+      MYSQL_USER: username
+      MYSQL_PASSWORD: password
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    volumes:
+      - ./dumps/databasedump_local_latest.sql:/docker-entrypoint-initdb.d/importdump.sql
+      # wenn man nicht immer wieder die daten importieren möchte, kann man den mysql Ordner auch auf den lokalen Rechner lenken.
+      # der folgende Eintrag sorgt dafür da die daten im root Ordner/mysql speichert und sie dauerhaft zur Verfügung stehen.
+      - ./mysql:/var/lib/mysql
